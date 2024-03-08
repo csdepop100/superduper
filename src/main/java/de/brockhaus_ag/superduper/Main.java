@@ -1,4 +1,4 @@
-package de.brockhaus_ag;
+package de.brockhaus_ag.superduper;
 
 public class Main {
     public static void main(String[] args) {

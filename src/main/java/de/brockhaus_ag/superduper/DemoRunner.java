@@ -12,7 +12,7 @@ public class DemoRunner {
     my application. I used to work a lot with the Spring MVC architecture, and it became my
     favourite and comfort architecture.
      */
-    private List<Product> products;
+    private final List<Product> products;
 
     public DemoRunner(ProductRepository repo) {
         this.products = repo.getAllProducts();

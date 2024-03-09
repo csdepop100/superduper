@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductRepositoryDemoImpl implements ProductRepository{
+public class ProductRepositoryDemoImpl implements ProductRepository {
     @Override
     public List<Product> getAllProducts() {
         var list = new ArrayList<Product>();

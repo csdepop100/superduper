@@ -15,11 +15,20 @@
     </properties>
 
     <dependencies>
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Development dependencies -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.0.1</version>
         </dependency>
-        <!-- Thanks for using https://jar-download.com -->
     </dependencies>
+
 </project>

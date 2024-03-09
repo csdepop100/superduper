@@ -3,6 +3,7 @@ package de.brockhaus_ag.superduper.model;
 import de.brockhaus_ag.superduper.wrapper.Euro;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
@@ -27,7 +28,7 @@ public abstract class Product {
     The strongly shared behaviour is the toString method which I use to print the products
     to the console for the demo.
      */
-
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
     protected final Euro basisPrice;
     protected String description;
     protected Euro price;
@@ -35,6 +36,7 @@ public abstract class Product {
     // java using primitives. That's why I use Objects wrappers where I can.
     protected Integer quality;
     protected LocalDateTime expirationDate;
+    protected boolean isExpired;
 
     protected Product(String description,
                       Euro basisPrice,
@@ -49,6 +51,30 @@ public abstract class Product {
         updatePrice();
     }
 
+    public Euro getBasisPrice() {
+        return basisPrice;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Euro getPrice() {
+        return price;
+    }
+
+    public Integer getQuality() {
+        return quality;
+    }
+
+    public LocalDateTime getExpirationDate() {
+        return expirationDate;
+    }
+
+    public boolean isExpired() {
+        return isExpired;
+    }
+
     abstract boolean isQuality();
 
     public abstract void dailyRoutine();
@@ -59,6 +85,8 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return description + "\t" + price.toString();
+        return description + "\t" + price.toString()
+                + "\t" + "quality: " + quality + "\texpires " + formatter.format(expirationDate);
     }
+
 }

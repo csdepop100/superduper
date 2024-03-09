@@ -30,5 +30,6 @@ public class DemoMain {
         var repo = new ProductRepositoryDemoImpl();
         var runner = new DemoRunner(repo);
         runner.listProducts();
+        runner.nextTenDays();
     }
 }

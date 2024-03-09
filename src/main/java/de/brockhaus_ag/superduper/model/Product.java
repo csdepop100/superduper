@@ -4,6 +4,7 @@ import de.brockhaus_ag.superduper.wrapper.Euro;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
@@ -36,7 +37,6 @@ public abstract class Product {
     // java using primitives. That's why I use Objects wrappers where I can.
     protected Integer quality;
     protected LocalDateTime expirationDate;
-    protected boolean isExpired;
 
     protected Product(String description,
                       Euro basisPrice,
@@ -46,8 +46,6 @@ public abstract class Product {
         this.basisPrice = basisPrice;
         this.quality = quality;
         this.expirationDate = expirationDate;
-        if (isFalse(isQuality()))
-            throw new IllegalArgumentException("This product does not meet our standards.");
         updatePrice();
     }
 
@@ -71,10 +69,6 @@ public abstract class Product {
         return expirationDate;
     }
 
-    public boolean isExpired() {
-        return isExpired;
-    }
-
     abstract boolean isQuality();
 
     public abstract void dailyRoutine();
@@ -85,8 +79,11 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return description + "\t" + price.toString()
-                + "\t" + "quality: " + quality + "\texpires " + formatter.format(expirationDate);
+        return description
+                + "\t" + price.toString()
+                + "\t" + "quality: " + quality
+                + (Objects.isNull(expirationDate) ? "" : "\texpires " + formatter.format(expirationDate))
+                + (isQuality() ? "" : "\t**REMOVE FROM STORAGE**");
     }
 
 }

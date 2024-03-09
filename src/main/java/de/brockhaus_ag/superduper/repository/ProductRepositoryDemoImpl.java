@@ -15,7 +15,7 @@ public class ProductRepositoryDemoImpl implements ProductRepository {
         var list = new ArrayList<Product>();
         list.add(new Cheese("stinky",
                 Euro.valueOf(2.5),
-                50,
+                35,
                 LocalDateTime.now().plusDays(75)));
         list.add(new Wine("Erben Spätlese", Euro.valueOf(50), 4));
         return list;

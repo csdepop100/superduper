@@ -14,7 +14,7 @@ public class Cheese extends Product {
 
     @Override
     boolean isQuality() {
-        return this.quality >= 30 || LocalDateTime.now().isBefore(expirationDate);
+        return this.quality >= 30 && LocalDateTime.now().isBefore(expirationDate);
     }
 
     @Override

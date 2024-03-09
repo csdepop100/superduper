@@ -2,16 +2,14 @@ package de.brockhaus_ag.superduper.model;
 
 import de.brockhaus_ag.superduper.wrapper.Euro;
 
-import java.time.LocalDateTime;
-
 public class Wine extends Product {
     private int qualityCounter;
 
-    protected Wine(String description,
-                   Euro basisPrice,
-                   Integer quality,
-                   LocalDateTime expirationDate) {
-        super(description, basisPrice, quality, expirationDate);
+    public Wine(String description,
+                Euro basisPrice,
+                Integer quality) {
+        super(description, basisPrice, quality, null);
+        this.price = this.basisPrice.plus(Euro.valueOf(0.1 * quality));
     }
 
     @Override
@@ -20,7 +18,7 @@ public class Wine extends Product {
     }
 
     @Override
-    void dailyRoutine() {
+    public void dailyRoutine() {
         if (this.quality > 50)
             return;
 

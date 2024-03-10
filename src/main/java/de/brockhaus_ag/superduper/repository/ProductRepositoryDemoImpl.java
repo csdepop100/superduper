@@ -13,7 +13,8 @@ public class ProductRepositoryDemoImpl implements ProductRepository {
     @Override
     public List<Product> getAllProducts() {
         var list = new ArrayList<Product>();
-        list.add(new Cheese("stinky",
+        // I'm not a fan of cheese, one of my flatmates is French
+        list.add(new Cheese("Stinky",
                 Euro.valueOf(2.5),
                 35,
                 LocalDateTime.now().plusDays(75)));

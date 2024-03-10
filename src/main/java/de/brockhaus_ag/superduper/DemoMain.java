@@ -17,11 +17,6 @@ public class DemoMain {
     the feel of (manual) dependency injection while not working with Spring. I felt like using
     Spring here would be overkill, so we keep the dependencies nice and tidy.
 
-    Speaking of dependencies, I included the apache commons-lang3 lib because I just love the
-    utility classes. Sometimes I feel like java as a langauge is a bit rough around the corners
-    and the development experience can be a little bit dry but those util classes make statements
-    like boolean not so much more readable and handling of Strings so much easier.
-
     I usually try to avoid using Lombok as I think it makes the debugging process much more
     difficult without saving much time. Using code completion and generation in IntelliJ is
     just as useful.
@@ -29,6 +24,7 @@ public class DemoMain {
     public static void main(String[] args) {
         var repo = new ProductRepositoryDemoImpl();
         var runner = new DemoRunner(repo);
+        System.out.println("-----initial values-----");
         runner.listProducts();
         runner.nextTenDays();
     }

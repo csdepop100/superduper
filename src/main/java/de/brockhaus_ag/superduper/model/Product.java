@@ -6,8 +6,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
-import static org.apache.commons.lang3.BooleanUtils.isFalse;
-
 public abstract class Product {
     /*
     Usually polymorphism might be seen as overused, but I think it fits perfectly here
@@ -28,6 +26,12 @@ public abstract class Product {
 
     The strongly shared behaviour is the toString method which I use to print the products
     to the console for the demo.
+
+    There is no valid-argument-check for Product. Usually I would check for expired cheese
+    or negative quality wine via the isQuality() method, before adding the Object to the warehouse
+    in the service layer to just have the necessary logic in my domain objects. If there was
+    some change in the way of handling low quality products, it would be much easier to adjust the
+    service layer than adjusting how domain objects work.
      */
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
     protected final Euro basisPrice;

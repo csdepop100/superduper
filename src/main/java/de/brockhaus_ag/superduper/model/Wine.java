@@ -9,6 +9,9 @@ public class Wine extends Product {
                 Euro basisPrice,
                 Integer quality) {
         super(description, basisPrice, quality, null);
+        // assuming the initial price is still calculated by using the quality
+        // if it's just the basis price delete this line of code
+        // That's something I would clarify with the stakeholder
         this.price = this.basisPrice.plus(Euro.valueOf(0.1 * quality));
     }
 
@@ -19,7 +22,7 @@ public class Wine extends Product {
 
     @Override
     public void dailyRoutine() {
-        if (this.quality > 50)
+        if (this.quality >= 50)
             return;
 
         qualityCounter++;

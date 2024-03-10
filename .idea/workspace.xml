@@ -4,16 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c7b937-a7c1-4589-b10a-3e59acda5bd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="33c7b937-a7c1-4589-b10a-3e59acda5bd5" name="Changes" comment="More tests + demo code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/DemoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/DemoMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/model/Wine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/model/Wine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/repository/ProductRepositoryDemoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/repository/ProductRepositoryDemoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/service/ExpirationDateChecker.java" beforeDir="false" />
+    </list>
+    <list id="de823ab5-94a3-46ad-9582-e8e86af2611a" name="ignore" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="8" start2="6" end2="14" changelist="33c7b937-a7c1-4589-b10a-3e59acda5bd5" />
+        <range start1="13" end1="13" start2="19" end2="27" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="16" end1="16" start2="30" end2="36" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="28" end1="28" start2="48" end2="60" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="30" end1="30" start2="62" end2="63" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="32" end1="32" start2="65" end2="69" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="33" end1="33" start2="70" end2="71" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="36" end1="36" start2="74" end2="166" changelist="de823ab5-94a3-46ad-9582-e8e86af2611a" />
+        <range start1="47" end1="47" start2="177" end2="178" changelist="33c7b937-a7c1-4589-b10a-3e59acda5bd5" />
+        <range start1="51" end1="51" start2="182" end2="207" changelist="33c7b937-a7c1-4589-b10a-3e59acda5bd5" />
+        <range start1="52" end1="52" start2="208" end2="225" changelist="33c7b937-a7c1-4589-b10a-3e59acda5bd5" />
+        <range start1="56" end1="56" start2="229" end2="259" changelist="33c7b937-a7c1-4589-b10a-3e59acda5bd5" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -26,14 +69,126 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DemoMain.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "JUnit.CheeseTest.cheeseAgingTest.executor": "Run",
+    "JUnit.CheeseTest.cheeseAgingTestOverTenDays.executor": "Run",
+    "JUnit.CheeseTest.cheeseDisplayTest.executor": "Run",
+    "JUnit.CheeseTest.cheeseExpirationTest.executor": "Debug",
+    "JUnit.CheeseTest.cheesePricingTest.executor": "Run",
+    "JUnit.CheeseTest.cheeseQualityTest.executor": "Run",
+    "JUnit.CheeseTest.executor": "Run",
+    "Maven.superduper [clean,compile].executor": "Run",
+    "Maven.superduper [clean].executor": "Run",
+    "Maven.superduper [compile].executor": "Run",
+    "Maven.superduper [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+      <command value="mvn clean compile" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.DemoMain">
+    <configuration name="DemoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.brockhaus_ag.superduper.DemoMain" />
+      <module name="superduper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.brockhaus_ag.superduper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheeseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="superduper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.brockhaus_ag.superduper.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.brockhaus_ag.superduper.model" />
+      <option name="MAIN_CLASS_NAME" value="de.brockhaus_ag.superduper.model.CheeseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheeseTest.cheeseDisplayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="superduper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.brockhaus_ag.superduper.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.brockhaus_ag.superduper.model" />
+      <option name="MAIN_CLASS_NAME" value="de.brockhaus_ag.superduper.model.CheeseTest" />
+      <option name="METHOD_NAME" value="cheeseDisplayTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheeseTest.cheeseExpirationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="superduper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.brockhaus_ag.superduper.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.brockhaus_ag.superduper.model" />
+      <option name="MAIN_CLASS_NAME" value="de.brockhaus_ag.superduper.model.CheeseTest" />
+      <option name="METHOD_NAME" value="cheeseExpirationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheeseTest.cheeseQualityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="superduper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.brockhaus_ag.superduper.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.brockhaus_ag.superduper.model" />
+      <option name="MAIN_CLASS_NAME" value="de.brockhaus_ag.superduper.model.CheeseTest" />
+      <option name="METHOD_NAME" value="cheeseQualityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoMain" />
+        <item itemvalue="JUnit.CheeseTest" />
+        <item itemvalue="JUnit.CheeseTest.cheeseQualityTest" />
+        <item itemvalue="JUnit.CheeseTest.cheeseExpirationTest" />
+        <item itemvalue="JUnit.CheeseTest.cheeseDisplayTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -45,14 +200,87 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="33c7b937-a7c1-4589-b10a-3e59acda5bd5" name="Changes" comment="" />
+      <changelist id="de823ab5-94a3-46ad-9582-e8e86af2611a" name="ignore" comment="" />
       <created>1709922152101</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709922152101</updated>
+      <workItem from="1709922153193" duration="20593000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1709922360971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709922360971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sketched first domain models">
+      <option name="closed" value="true" />
+      <created>1709926828590</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709926828590</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cleaned up demo code and added comments">
+      <option name="closed" value="true" />
+      <created>1710003201151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710003201151</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added first tests + bug fix and clean up">
+      <option name="closed" value="true" />
+      <created>1710006790927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710006790927</updated>
+    </task>
+    <task id="LOCAL-00005" summary="More tests + demo code">
+      <option name="closed" value="true" />
+      <created>1710009632232</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710009632232</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="sketched first domain models" />
+    <MESSAGE value="Cleaned up demo code and added comments" />
+    <MESSAGE value="Added first tests + bug fix and clean up" />
+    <MESSAGE value="More tests + demo code" />
+    <option name="LAST_COMMIT_MESSAGE" value="More tests + demo code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/brockhaus_ag/superduper/model/Cheese.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

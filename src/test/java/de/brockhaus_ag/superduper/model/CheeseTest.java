@@ -13,8 +13,9 @@ public class CheeseTest {
     /*
     As tests are optional, I will write a test suit for the class that has the most business logic.
     I'm not aiming for high code coverage or to cover every edge case. These tests are just here to
-    demonstrate that I have written some unit tests in my life. I try to follow the AAA method
-    (Assemble Act Assert) as much as possible, though I think it is not necessary for small tests.
+    demonstrate that I have written some unit tests in my life.
+    I try to follow the AAA method (Assemble Act Assert) as much as possible, though I think it is
+    not necessary for small tests.
     I'm not dealing with the side effects of LocalDateTime.now() in this demo. Neither in code
     nor in testing because I think simply out of scope for a small demo like this.
      */
